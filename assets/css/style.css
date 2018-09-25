@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(0, 128, 160)
+}
+.navbar {
+    padding: 2px 140px 2px 140px;
+}
+.jubotroncon {
+    padding: 5px 140px 5px 140px;
+}
+.body_section {
+    margin-top:20px;
+    width: 960px;
+    background-color:white;
+    margin:auto;
+    padding: 5px;
+}
+
+@media screen and (max-width: 980px) {
+    .body_section {
+        margin-top:20px;
+        width: 95%;
+        background-color:white;
+        margin:auto;
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 640px) {
+    #vuname {
+        float: none;
+        width: 100%;
+        margin:0;
+        text-align: center;
+        padding: 15px 0px 15px 0px;
+
+    }
+    .profileimg {
+        width:92%;
+    }
+    .nav {
+        float:none;
+        display:block;
+        align-content: center;
+        margin-left:9vw;
+    }
+    p.portfolioname {
+        position: absolute;
+        bottom: 0px;
+        width: 98%;
+        box-sizing: border-box;
+    }
+    img.portfolioimg {
+        width: 98%;
+        height: auto;
+        box-sizing: border-box;
+    }
+    
+
+}
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+  }
+.footer,
+.push {
+  height: 50px;
+}
+.footer {
+    background-color:white;
+    text-align: center;
+    border-top: 4px gray solid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 10px;
+    color: rgb(59, 59, 59);
+  }
