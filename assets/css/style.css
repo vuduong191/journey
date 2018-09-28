@@ -34,32 +34,39 @@ body{
 }
 
 .body_section_parallax {
-    width: 100%;
     position: relative;
-    height: 1200px;
+    height:  1000px;
+    overflow: hidden;
 }
 /* for parallax */
 .parallax::after {
-    /* Display and position the pseudo-element */
     content: " ";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    
-    /* Move the pseudo-element back away from the camera,
-     * then scale it back up to fill the viewport.
-     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-    transform: translateZ(-5px) scale(3.4);
-    /* Force the background image to fill the whole element. */
-    background-size: 100%;
-    /* Keep the image from overlapping sibling elements. */ 
-    z-index: -1;
+    transform: translateZ(-5px) scale(3.8);
+    background-size: cover;
+    z-index: -3;
+  }
+.parallax2::after {
+    content: " ";
+    position: absolute;
+    top: 800px;;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-10px) scale(9.4);
+    background-size: cover;
+    z-index: -2;
   }
 .bg1::after {
-    background-image: url(../images/profile.jpg);
+    background-image: url(../images/brickwall2.jpg);
     background-repeat: no-repeat;
+}
+.bg2::after {
+    background-color: #ffbc04;
 }
 .fl-right-align-bg  {
     background-position-x: right !important;
@@ -68,7 +75,7 @@ body{
     padding-left: 90px;
     width: 500px;
     position: relative;
-    top: -900px;
+    top: 300px;
 }
 #aboutme {
     margin-top: 20px;
@@ -93,15 +100,16 @@ hr {
     border-width: 2px;}
 
 .boring {
-    margin-left: 10vh;
+        margin: 0 auto;
         position: relative;
         display: inline-table;
-        top: -1100px;
+        top: 0px;
         width: 50vh;
         height: 50vh;
         border-radius: 50%;
         background-color:#ffbc04;
     }
+
 .inner {
         text-align: center;
         color: #222;
@@ -109,6 +117,15 @@ hr {
         display: table-cell;
         vertical-align: middle;
         width: 100%;
+}
+.inner2 {
+        text-align: center;
+        color: #222;
+        font-size: 4em;
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        padding-top: 300px;
 }
 
 @media screen and (max-width: 980px) {
@@ -153,8 +170,7 @@ hr {
 
 }
 .wrapper {
-    height: 100vh;
-    margin-bottom: -30px;
+    height: 95vh;
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 2px;
@@ -173,3 +189,29 @@ hr {
     padding-top: 7px;
     color: rgb(59, 59, 59);
   }
+/* copy from others */
+#header {
+width: 100%;
+background: url('../images/header-bg.png');
+height: 80px;
+position: fixed;
+margin-top: 20px;
+top: 0;
+left: 0;}
+
+#nav { width: 410px; float: right; margin-top: 20px; }
+#logo a { color: #222; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #222; font-family:"Wellfleet"; font-weight: bold; }
+#nav ul{
+list-style: none;
+display: block;
+margin: 0 auto;
+list-style: none;
+}
+#nav li{
+margin-top: 9px;
+float: left;
+padding-left: 21px;
+}
+#nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; }
+#nav li a.active { color: #222; opacity:1; border-bottom: 2px solid #222; }
+#nav li a:hover { color: #222; opacity:1; }
