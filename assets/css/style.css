@@ -59,7 +59,7 @@ body{
     left: 0;
     transform: translateZ(-10px) scale(9.4);
     background-size: cover;
-    z-index: -2;
+    z-index: -2;g
   }
 .bg1::after {
     background-image: url(../images/brickwall2.jpg);
@@ -193,15 +193,16 @@ hr {
 /* copy from others */
 #header {
 width: 100%;
-background: url('../images/header-bg.png');
-height: 80px;
+background-color: rgb(224, 224, 224,0.5);
+height: 50px;
 position: fixed;
-margin-top: 20px;
+z-index: 2;
+margin-top: 0px;
 top: 0;
 left: 0;}
 
-#nav { width: 410px; float: right; margin-top: 20px; }
-#logo a { color: #222; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #222; font-family:"Wellfleet"; font-weight: bold; }
+#nav { width: 410px; float: right; margin-top: 10px; }
+#logo a { color: #222; text-decoration: none; float: left; font-size: 30px; margin-top: 10px; color: #222; font-family:"Frank Ruhl Libre"; font-weight: bold; margin-left: 150px }
 #nav ul{
 list-style: none;
 display: block;
@@ -213,6 +214,5 @@ margin-top: 9px;
 float: left;
 padding-left: 21px;
 }
-#nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; }
-#nav li a.active { color: #222; opacity:1; border-bottom: 2px solid #222; }
-#nav li a:hover { color: #222; opacity:1; }
+#nav li a { color: rgb(51, 51, 51); opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Frank Ruhl Libre'; }
+#nav li a:hover { color: #222; opacity:1;}
