@@ -46,7 +46,7 @@ body{
     right: 0;
     bottom: 0;
     left: 0;
-    transform: translateZ(-5px) scale(3.8);
+    transform: translateZ(-5px) scale(3.5);
     background-size: cover;
     z-index: -3;
   }
