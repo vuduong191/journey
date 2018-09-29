@@ -101,6 +101,7 @@ hr {
 
 .boring {
         margin: 0 auto;
+        /* This is where I tried to align it */
         position: relative;
         display: inline-table;
         top: 0px;
