@@ -5,3 +5,4 @@ local again
 This is the 2nd line inserted from master
 Check this 3rd shit from master
 Newshit from master
+The forth shit from master
