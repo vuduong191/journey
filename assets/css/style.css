@@ -77,6 +77,10 @@ img {
 .bg2::after {
     background-color: #ffbc04;
 }
+.bg3::after {
+    background-image: url(../images/clean_brickwall.jpg);
+    background-repeat: no-repeat;
+}
 .fl-right-align-bg  {
     background-position-x: right !important;
   }
@@ -151,6 +155,21 @@ hr {
         margin:auto;
         width: 70%;
         padding-top: 200px;
+}
+.container3 {
+        width:70%;
+        margin:auto;
+        margin-top: 120px;
+        text-align: center;
+}
+.inner-container_3 {
+        display: inline-block;
+
+}
+.social_icon {
+    float: left;
+    margin: 30px;
+    height: 70px;
 }
 
 @media screen and (max-width: 980px) {
