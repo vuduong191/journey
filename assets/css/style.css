@@ -3,6 +3,10 @@ body{
     margin: 0;
     padding:0;
 }
+img {
+    max-width: 60%;
+    height: auto;
+}
 .navbar {
     padding: 2px 250px 2px 255px;
     font-family: 'Raleway';
@@ -38,6 +42,11 @@ body{
     height:  1000px;
     overflow: hidden;
 }
+.body_section_parallax2 {
+    position: relative;
+    height:  500px;
+    overflow: hidden;
+}
 /* for parallax */
 .parallax::after {
     content: " ";
@@ -46,14 +55,14 @@ body{
     right: 0;
     bottom: 0;
     left: 0;
-    transform: translateZ(-5px) scale(3.5);
+    transform: translateZ(-5px) scale(3.6);
     background-size: cover;
     z-index: -3;
   }
 .parallax2::after {
     content: " ";
     position: absolute;
-    top: 800px;;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -72,61 +81,76 @@ body{
     background-position-x: right !important;
   }
 .intro1 {
-    padding-left: 90px;
-    width: 500px;
     position: relative;
-    top: 300px;
+    top: 100px;
 }
 #aboutme {
-    margin-top: 20px;
-    margin-left:25px;
     font-size: 4em;
     font-family: 'Frank Ruhl Libre';
     color: rgb(59, 59, 59);
 }
 #vu_introduction {
-    margin: 20px;
     font-family: 'Frank Ruhl Libre';
+    font-size: 1.2em;
     line-height: 1.5em;
 }
 hr {
     display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 1.4em;
+    margin-right: 30px;
     border-style: solid;
     border-color:#ffbc04;
     border-width: 2px;}
-
+#testid1 {
+    background-image: url(../images/profile.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 13em;
+}
 .boring {
-        margin: 0 auto;
-        /* This is where I tried to align it */
+        /* margin: auto; */
         position: relative;
-        display: inline-table;
-        top: 0px;
-        width: 50vh;
-        height: 50vh;
-        border-radius: 50%;
-        background-color:#ffbc04;
+        top: -330px;
+        margin: auto;
+        display: table;
+        width: 18em;
+        height: 18em;
+        background-image: url(../images/letter.png)
+        /* This is where I tried to align it */
     }
+.boring3 {
+        position: relative;
+        top: -1030px;
+        float: left;
+        z-index: 14;
+        height: 0px;
+        margin-left: 700px;
+    }
+.boring_container {
+        /* position: relative;
+        top: 0px; */
+        display: table-cell;
+        margin: auto;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 50%;
+
+        vertical-align: center;
+}
 
 .inner {
-        text-align: center;
         color: #222;
-        font-size: 4em;
-        display: table-cell;
-        vertical-align: middle;
+        font-size: 2em;
         width: 100%;
 }
 .inner2 {
         text-align: center;
         color: #222;
-        font-size: 4em;
-        display: table-cell;
-        vertical-align: middle;
-        width: 100%;
-        padding-top: 300px;
+        font-size: 1.3em;
+        margin:auto;
+        width: 70%;
+        padding-top: 200px;
 }
 
 @media screen and (max-width: 980px) {
@@ -193,7 +217,8 @@ hr {
 /* copy from others */
 #header {
 width: 100%;
-background-color: rgb(224, 224, 224,0.5);
+background-image: linear-gradient(rgb(224, 224, 224,0.4),rgb(224, 224, 224,0.7));
+border-bottom: rgb(224, 224, 224,0.7) 2px solid;
 height: 50px;
 position: fixed;
 z-index: 2;
