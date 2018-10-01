@@ -3,39 +3,21 @@ body{
     margin: 0;
     padding:0;
 }
-img {
-    max-width: 60%;
-    height: auto;
-}
 .navbar {
-    padding: 2px 250px 2px 255px;
+    padding: 2px 150px 2px 150px;
     font-family: 'Raleway';
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    width:100%;
+    z-index: 5;
 }
-.navbar-brand {
-    margin: -10px;
+.navbar-nav {
+    margin-left: auto;
 }
-.jumbotron {
-    /* background-image: url(../images/pattern_triangles.png); */
-    background-color: #ffbc04;
-}
-.searchbtn {
-    border: #00715a solid 2px;
-    color: #00715a ;
-}
-.searchbtn:hover {
-    background-color: #00715a ;
-    border: #00715a solid 2px;
-}
-.jubotroncon {
-    padding: 5px 100px 5px 100px;
-}
-.body_section {
-    margin-top:20px;
-    width: 960px;
-    background-color:white;
-    margin:auto;
-    padding: 5px;
-}
+#mascot {
+        height: 400px;
+        width: auto;
+    }
 
 .body_section_parallax {
     position: relative;
@@ -55,7 +37,7 @@ img {
     right: 0;
     bottom: 0;
     left: 0;
-    transform: translateZ(-5px) scale(3.6);
+    transform: translateZ(-5px) scale(4.6);
     background-size: cover;
     z-index: -3;
   }
@@ -66,21 +48,23 @@ img {
     right: 0;
     bottom: 0;
     left: 0;
-    transform: translateZ(-10px) scale(9.4);
+    transform: translateZ(-6px) scale(4.4);
     background-size: cover;
-    z-index: -2;g
+    z-index: -2;
   }
 .bg1::after {
     background-image: url(../images/brickwall2.jpg);
     background-repeat: no-repeat;
+    opacity: 0.6;
 }
 .bg2::after {
     background-color: #ffbc04;
 }
 .bg3::after {
-    background-image: url(../images/clean_brickwall.jpg);
+    background-image: url(../images/brickwall.jpg);
     background-repeat: no-repeat;
 }
+
 .fl-right-align-bg  {
     background-position-x: right !important;
   }
@@ -92,6 +76,7 @@ img {
     font-size: 4em;
     font-family: 'Frank Ruhl Libre';
     color: rgb(59, 59, 59);
+    text-shadow:  4px 4px 8px #fff;
 }
 #vu_introduction {
     font-family: 'Frank Ruhl Libre';
@@ -129,6 +114,8 @@ hr {
         z-index: 14;
         height: 0px;
         margin-left: 700px;
+        transform: translateZ(-0.5px) scale(1.4);        
+
     }
 .boring_container {
 
@@ -165,99 +152,33 @@ hr {
 }
 .social_icon {
     float: left;
-    margin: 30px;
+    margin: 20px;
     height: 50px;
     width: 50px;
 }
 
 @media screen and (max-width: 980px) {
-    .body_section {
-        margin-top:20px;
-        width: 95%;
-        background-color:white;
-        margin:auto;
-        padding: 5px;
+
+#mascot {
+        height: 300px;
+        width: auto;
     }
 }
 @media screen and (max-width: 640px) {
-    #vuname {
-        float: none;
-        width: 100%;
-        margin:0;
-        text-align: center;
-        padding: 15px 0px 15px 0px;
-
+#mascot {
+        height: 150px;
+        width: auto;
     }
-    .profileimg {
-        width:92%;
-    }
-    .nav {
-        float:none;
-        display:block;
-        align-content: center;
-        margin-left:9vw;
-    }
-    p.portfolioname {
-        position: absolute;
-        bottom: 0px;
-        width: 98%;
-        box-sizing: border-box;
-    }
-    img.portfolioimg {
-        width: 98%;
-        height: auto;
-        box-sizing: border-box;
-    }
-    
-
+.navbar {
+    padding: 2px 50px 2px 50px;
+    font-family: 'Raleway';
+    background-color: rgba(255, 255, 255, 0.3);
+}
 }
 .wrapper {
-    height: 94vh;
+    height: 92vh;
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 2px;
   }
-.footer,
-.push {
-  height: 30px;
-}
-.footer p {
-    color:gray;
-}
-.footer {
-    background-color:white;
-    text-align: center;
-    border-top: 2px #c78c00 solid;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 0.8em;
-    color: rgb(224, 224, 224);
-    padding-top: 7px;
-    color: rgb(59, 59, 59);
-  }
-/* copy from others */
-#header {
-width: 100%;
-background-image: linear-gradient(rgb(224, 224, 224,0.4),rgb(224, 224, 224,0.7));
-border-bottom: rgb(224, 224, 224,0.7) 2px solid;
-height: 50px;
-position: fixed;
-z-index: 2;
-margin-top: 0px;
-top: 0;
-left: 0;}
 
-#nav { width: 410px; float: right; margin-top: 10px; }
-#logo a { color: #222; text-decoration: none; float: left; font-size: 30px; margin-top: 10px; color: #222; font-family:"Frank Ruhl Libre"; font-weight: bold; margin-left: 150px }
-#nav ul{
-list-style: none;
-display: block;
-margin: 0 auto;
-list-style: none;
-}
-#nav li{
-margin-top: 9px;
-float: left;
-padding-left: 21px;
-}
-#nav li a { color: rgb(51, 51, 51); opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Frank Ruhl Libre'; }
-#nav li a:hover { color: #222; opacity:1;}
