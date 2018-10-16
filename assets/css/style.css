@@ -3,6 +3,12 @@ body{
     margin: 0;
     padding:0;
 }
+a {
+  color: white;
+}
+a:hover {
+    color:white;
+}
 .navbar {
     padding: 2px 150px 2px 150px;
     font-family: 'Raleway';
@@ -78,10 +84,38 @@ body{
     color: rgb(59, 59, 59);
     text-shadow:  4px 4px 8px #fff;
 }
-#vu_introduction {
+.vu_introduction {
     font-family: 'Frank Ruhl Libre';
     font-size: 1.2em;
     line-height: 1.5em;
+}
+.vu_introduction2 {
+    font-family: 'Muli';
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.chevron {
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(59, 59, 59);
+    opacity: 0.6;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: change_position;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;    
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes change_position {
+    from {top: 0;}
+    to {top: 10px;}
+}
+
+/* Standard syntax */
+@keyframes change_position {
+    from {top: 0;}
+    to {top: 10px;}
 }
 hr {
     display: block;
@@ -90,7 +124,8 @@ hr {
     margin-right: 30px;
     border-style: solid;
     border-color:#ffbc04;
-    border-width: 2px;}
+    border-width: 2px;
+}
 #testid1 {
     background-image: url(../images/profile.jpg);
     background-size: 100%;
@@ -107,9 +142,71 @@ hr {
         height: 100%;
         background-color: #ffbc04;
     }
+.boring2 {
+        /* margin: auto; */
+        position: relative;
+        top: 0;
+        margin: auto;
+        display: table;
+        width: 100%;
+        height: 100%;
+        background-color: #2b2b2b;
+    }
+.overlaycontainer {
+    width: 100%;
+    text-align: center;
+}    
+.overlayimg {
+    display: inline-block;
+    position:relative;
+}
+#overlayborder {
+    position: absolute;
+    margin: 160px auto;
+    height: 350px;
+    width: 350px;
+    color: white;
+    border: 3px white solid;
+    z-index: 200;
+}
+
+#overlaytext {
+    /* display: inline-block; */
+    position: absolute;
+    /* margin: 160px auto; */
+    height: 350px;
+    width: 350px;
+    z-index: 202;
+    text-align: center;
+    padding: 95px 40px 100px 40px;
+    top: 160px;
+    left: 5px;
+}
+#overlaytext p {
+    color: #2b2b2b;
+    font-family: 'Muli';
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-shadow: 0px 1px 1px #ffbc04;    
+}
+.overlayimg img {
+    /* float: left; */
+    position: absolute;
+    height: 500px;
+    top: 7px;
+    left: -100px;
+}
+#belowlayer {
+    z-index: 4;
+}
+#toplayer {
+    z-index: 201;
+    border: 2px white;
+}
 .boring3 {
         position: relative;
-        top: -1090px;
+        top: -250vh;
+        left: 60vh;
         float: left;
         z-index: 14;
         height: 0px;
@@ -160,7 +257,7 @@ hr {
 @media screen and (max-width: 980px) {
 
 #mascot {
-        height: 300px;
+        height: 250px;
         width: auto;
     }
 }
