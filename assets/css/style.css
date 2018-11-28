@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: white;
     margin: 0;
@@ -16,6 +19,11 @@ a:hover {
     position: fixed;
     width:100%;
     z-index: 5;
+}
+.navbar-brand {
+    font-family: 'Caesar Dressing';
+    color:rgb(59, 59, 59);
+    font-size: 2.5em;
 }
 .navbar-nav {
     margin-left: auto;
@@ -80,12 +88,12 @@ a:hover {
 }
 #aboutme {
     font-size: 4em;
-    font-family: 'Frank Ruhl Libre';
-    color: rgb(59, 59, 59);
+    font-family: 'Raleway';
+    color: rgb(94, 92, 92);
     text-shadow:  4px 4px 8px #fff;
 }
 .vu_introduction {
-    font-family: 'Frank Ruhl Libre';
+    font-family: 'Muli';
     font-size: 1.2em;
     line-height: 1.5em;
 }
