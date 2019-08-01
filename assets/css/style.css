@@ -3,12 +3,13 @@ html{
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
-}
+
 body{
     background-color: white;
     margin: 0;
     padding:0;
 }
+
 a {
   color: white;
 }
